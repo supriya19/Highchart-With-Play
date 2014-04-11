@@ -1,0 +1,76 @@
+@(message: String)
+
+@navbar(message)
+
+@main(message) {
+
+<div class="main">
+	<div class="container">
+
+		<div class="row">
+		
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.pie")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="pieChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+			
+		</div><!-- /row -->
+		
+		<div class="row">
+		
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.area")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="areaChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+			
+		</div><!-- /row -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.combination")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="comboChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+
+</div><!-- /main -->
+}

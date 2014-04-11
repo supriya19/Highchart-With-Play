@@ -1,0 +1,274 @@
+/*------------------------------------------------------------------
+[Custom Stylesheet]
+-------------------------------------------------------------------*/
+
+.row {
+    margin-left: -15px;
+}
+
+/* #big_stats .stat {
+	width: 16%;
+}
+
+#big_stats .stat .value {
+	font-size: 30px;
+} */
+
+/* .subnavbar {
+	margin-bottom: 3.5em;
+} */
+
+/*------------------------------------------------------------------
+[ Navbar / .navbar ]
+*/
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	border-radius: 0 !important;
+}
+
+.navbar {
+	background: #0072C6;
+	border-color: #0072C6;
+	border-bottom: 1px solid #178ACC;
+}
+
+.navbar-brand img {
+	height: 40px;
+}
+
+/* .navbar > .container .navbar-brand {
+    margin-left: -55px;
+} */
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar .caret {
+	border-bottom-color: #000;
+	border-top-color: #000;
+}
+
+.navbar a {
+	color: #FFF;
+}
+
+.navbar a:HOVER {
+	color: #000;
+}
+
+.navbar .navbar-nav > .active > a {
+    background-color: #54B4EB;
+}
+
+.nav > li > a:HOVER, .nav > li > a:FOCUS {
+	background-color: #54B4EB;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: #000;
+}
+
+.navbar .navbar-toggle {
+	padding: 9px;
+	margin-top: 6px;
+	margin-right: 5px;
+	margin-bottom: 0;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 0;
+	border-color: transparent;
+}
+
+.navbar .navbar-nav>li>a {
+	font-size: 12px;
+}
+
+.navbar .navbar-header .navbar-brand {
+	color: #FFFFFF;
+	font-weight: 600;
+	position: relative;
+	top: 0;
+}
+
+.navbar .navbar-header .navbar-brand:hover {
+	color: #000000;
+}
+
+.navbar .navbar-nav>li>.dropdown-menu {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.navbar .navbar-nav>li>.dropdown-menu::before,.navbar .navbar-nav>li>.dropdown-menu::after
+	{
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #FFF;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: -7px;
+	left: 9px;
+}
+
+.navbar .navbar-nav>li>.dropdown-menu::after {
+	border-left-width: 6px;
+	border-right-width: 6px;
+	border-bottom-width: 6px;
+	border-bottom-color: #fff;
+	top: -6px;
+	left: 10px;
+}
+
+.navbar .navbar-nav.navbar-right>li>.dropdown-menu::before,.navbar .navbar-nav.navbar-right>li>.dropdown-menu::after
+	{
+	left: auto;
+	right: 9px;
+}
+
+.navbar .navbar-nav.navbar-right>li>.dropdown-menu::after {
+	left: auto;
+	right: 10px;
+}
+
+.navbar .navbar-form .search-query {
+	width: 225px;
+	margin-top: 2px;
+	background-color: #FFF;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 20px;
+	border-color: #FFF;
+	border-radius: 20px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0
+		rgba(255, 255, 255, 0.15);
+}
+
+.navbar .navbar-form .search-query:focus {
+	background-color: #FFF;
+}
+
+.navbar .navbar-form .search-query::-webkit-input-placeholder {
+	color: #666;
+}
+
+.navbar .navbar-form .search-query::-moz-placeholder {
+	color: #666;
+}
+
+/* Error Message  */
+.error {
+    padding-top: 5px;
+    color: #b94a48;
+}
+
+/* Custom CSS for CHART height*/
+.custom-chart-height {
+	min-height: 350px;
+}
+
+/* Custom CSS for CHART Height of KPI Chart*/
+.custom-chart-kpi-height {
+	min-height: 50px;
+	text-align: center;
+}
+
+/* Custom CSS font KPI */
+.custom-font {
+	font-size: 30px;
+	font-weight: bold;
+	color: #3333;
+	line-height: 1em;
+}
+
+
+/* Customize dataTable CSS  */
+.dataTables_info {
+	padding-left: 26px;
+}
+
+.custom-data-table-height {
+	min-height: 425px;
+}
+
+.stat-value {
+    color: #444444;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+#big_stats .stat h4 {
+    margin-bottom: 0.25em;
+}
+
+.widget .widget-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    padding: 10px 15px 15px;
+}
+
+.modal-vertical-centered {
+	width: 100px;
+	transform: translate(0, 50%) !important;
+	-ms-transform: translate(0, 50%) !important; /* IE 9 */
+	-webkit-transform: translate(0, 50%) !important;/* Safari and Chrome */
+}
+
+/* Add space between to button */
+.button-space {
+	padding: 5px;
+}
+
+/* Routing Rules screen related CSS */
+.routing-rule-select {
+	height: auto;
+	padding: 0;
+}
+
+.conditions label {
+    display: none;
+}
+
+.conditions_template {
+    display: none;
+}
+
+#ruleId_field .info {
+    display: none;
+}
+
+#name_field .info {
+    display: none;
+}
+
+#ruleId_field label {
+    display: none;
+}
+
+.value-column {
+	width: 155px;
+}
+
+.operator-column {
+	width: 105px;
+}
+
+/* Custom CSS for Home Page height*/
+.custom-home-height {
+	min-height: 500px;
+	padding-top: 100px;
+}
+
+/* Custom CSS for Inbox Role Content height*/
+.custom-inbox-div-height {
+	min-height: 100px;
+}
+
+

@@ -1,0 +1,76 @@
+@(message: String)
+
+@navbar(message)
+@main(message) {
+
+<div class="main">
+	<div class="container">
+
+		
+		<div class="row">
+		
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.bar")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="barChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+			
+		</div><!-- /row -->
+		
+		<div class="row">
+		
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.stacked")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="barStackedChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+			
+		</div><!-- /row -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.column")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="columnChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+
+</div><!-- /main -->
+}

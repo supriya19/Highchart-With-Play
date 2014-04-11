@@ -1,0 +1,55 @@
+@(message: String)
+
+@navbar(message)
+@main(message) {
+
+<div class="main">
+	<div class="container">
+
+		
+		<div class="row">
+		
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.line")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="lineChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+			
+		</div><!-- /row -->
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div class="widget stacked">
+
+					<div class="widget-header">
+						<i class="icon-list-alt"></i>
+						<h3>@Messages("label.time")</h3>
+					</div><!-- /widget-header -->
+
+					<div class="widget-content">
+						<div id="timeSeriesChart" class="chart-holder"></div>
+					</div><!-- /widget-content -->
+
+				</div><!-- /widget -->
+
+			</div><!-- /span12 -->
+
+		</div><!-- /row -->
+
+	</div><!-- /container -->
+
+</div><!-- /main -->
+}
