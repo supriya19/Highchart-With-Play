@@ -1,46 +1,47 @@
 @(selectedSubNavbar: String)
 
-<div class="subnavbar">
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" target="_blank" href="http://www.highcharts.com/">Highcharts</a>
+    </div>
 
-	<div class="subnavbar-inner">
-	
-		<div class="container">
-			
-			<div class="collapse subnav-collapse">
-				<ul class="mainnav">				
-					<li class="@if(Messages("subheader.time_line") == selectedSubNavbar){active}">
-						<a href="@routes.Application.lineChart">
-							<i class="icon-tasks"></i>
-							<span>@Messages("subheader.time_line")</span>
-						</a>	    				
-					</li>
-					
-					<li class="@if(Messages("subheader.bar_column") == selectedSubNavbar){active}">
-						<a href="@routes.Application.columnAndBarChart">
-							<i class=" icon-barcode"></i>
-							<span>@Messages("subheader.bar_column")</span>
-						</a>	    				
-					</li>
-					
-					<li class="@if(Messages("subheader.area_pie") == selectedSubNavbar){active}">
-						<a href="@routes.Application.areaAndPieChart">
-							<i class="icon-th-large"></i>
-							<span>@Messages("subheader.area_pie")</span>
-						</a>	    				
-					</li>
-					
-					<li class="@if(Messages("subheader.bubble") == selectedSubNavbar){active}">
-						<a href="@routes.Application.bubbleChart">
-							<i class=" icon-tint"></i>
-							<span>@Messages("subheader.bubble")</span>
-						</a>	    				
-					</li>
-				</ul>
-				
-			</div> <!-- /.subnav-collapse -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="@if(Messages("subheader.time_line") == selectedSubNavbar){active}">
+        	<a href="@routes.Application.lineChart">
+        		<i class="icon-tasks"></i>
+        		<span>@Messages("subheader.time_line")</span>
+        	</a>
+        </li>
+        <li class="@if(Messages("subheader.bar_column") == selectedSubNavbar){active}">
+        	<a href="@routes.Application.columnAndBarChart">
+        		<i class=" icon-barcode"></i>
+        		<span>@Messages("subheader.bar_column")</span>
+        	</a>
+        </li>
+        <li class="@if(Messages("subheader.area_pie") == selectedSubNavbar){active}">
+        	<a href="@routes.Application.areaAndPieChart">
+        		<i class="icon-th-large"></i>
+        		<span>@Messages("subheader.area_pie")</span>
+        	</a>
+        </li>
+        <li class="@if(Messages("subheader.bubble") == selectedSubNavbar){active}">
+        	<a href="@routes.Application.bubbleChart">
+        		<i class=" icon-tint"></i>
+        		<span>@Messages("subheader.bubble")</span>
+        	</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-		</div> <!-- /container -->
-	
-	</div> <!-- /subnavbar-inner -->
-
-</div> <!-- /subnavbar -->
